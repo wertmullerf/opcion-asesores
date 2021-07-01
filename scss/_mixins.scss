@@ -1,0 +1,115 @@
+@mixin btnDark {
+  display: inline;
+	padding: 8px 10px;
+	background-color: $bgDark;
+	border-radius: 10px;
+	color: $wColor;
+	text-decoration: none;
+	transition: .5s;
+	font-size: 16px;
+	font-family: $latoFamily;
+	font-weight: $wRegular;
+}
+
+@mixin btnGreen {
+    display: inline;
+    padding: 8px 10px;
+    background-color: $greenBtn;
+    border-radius: 10px;
+    color: $wColor;
+    text-decoration: none;
+    transition: .5s;
+    font-size: 16px;
+    font-family: $latoFamily;
+    font-weight: $wRegular;
+    width: max-content;
+}
+
+@mixin titles{
+  font-family: $poppinsFamily;
+  font-weight: $wSemibold;
+  color: $titleColor;
+  font-size: 32px;
+  color:#1F1841;
+}
+
+@mixin text{
+  color:$pColor;
+  font-weight: $wMedium;
+  font-family: $latoFamily;
+  font-size: 16px;
+}
+
+
+@mixin subtitles{
+  color:$spanColor;
+  font-weight: $wSemibold;
+  font-size: 18px;
+}
+
+@mixin card--general{
+  .equal-height{
+    height: max-content;
+  }
+	.article__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+	}
+	.card{
+    overflow: hidden;
+    //-webkit-box-shadow: 2px 5px 17px 1px #848484; //
+    //box-shadow: 2px 5px 17px 1px #848484;//
+    background: $wColor;
+    border-radius: 10px;
+    position: relative;
+    width: 350px;
+    margin: 1rem;
+    transition: 250ms all ease-in-out;
+    cursor: pointer;
+    align-self: normal;
+	}
+	.banner__img{
+		position: absolute;
+		object-fit: cover;
+		height: 14rem;
+		width: 100%;
+	}
+	.category__tag{
+		font-size: 0.8rem;
+		font-weight: $wBold;
+		color: $wColor;
+		padding: 0.5rem 1.3rem 0.5rem 1rem;
+		text-transform: uppercase;
+		position: absolute;
+		z-index: 1;
+		top: 1rem;
+		border-radius: 0 2rem 2rem 0;
+	}
+  .card__body{
+    margin: 14.5rem 1rem 1rem 1rem;
+      strong{
+        font-family: $poppinsFamily;
+        font-weight: $wSemibold;
+        font-size: 18px;
+        color: $titleColor;
+        transition: .4s;
+        &:hover{
+          color: $spanColor;
+        }
+        p{
+          margin-top: 5px;
+          color: $pColor;
+          font-size: 14px;
+          font-weight: $wRegular;
+        }
+      }
+  }
+  .inversion{
+    font-family: $poppinsFamily;
+    font-weight: $wSemibold;
+    font-size: 12px;
+    background-color: $spanColor;
+  }
+}
