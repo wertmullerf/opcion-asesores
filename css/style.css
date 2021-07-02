@@ -546,7 +546,7 @@ body {
 
 #bannerAbout strong {
   color: #fff;
-  font-size: 72px;
+  font-size: 60px;
   font-family: "Poppins", "sans-serif";
   font-weight: 400;
 }
@@ -554,6 +554,15 @@ body {
 #bannerAbout li {
   color: #fff;
   font-size: 20px;
+}
+
+#bannerAbout li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#bannerAbout .breadcrumb-item, #bannerAbout .breadcrumb-item::before {
+  color: #fff;
 }
 
 #misionVision {
@@ -746,6 +755,86 @@ body {
   background-color: #6EAF74;
 }
 
+#modalidad {
+  height: 170vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#modalidad .pymes {
+  width: 50%;
+  margin-top: 30px;
+}
+
+#modalidad .pymes h1 {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+  color: #1F1841;
+  font-size: 32px;
+  color: #1F1841;
+}
+
+#modalidad .pymes strong {
+  color: #4836FE;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#modalidad .pymes p {
+  color: #686777;
+  font-weight: 500;
+  font-family: "Lato", "sans-serif";
+  font-size: 16px;
+  margin-top: 15px;
+  width: 80%;
+}
+
+#modalidad .pymes img {
+  border-radius: 10px;
+  margin: 10px 0 15px 0;
+}
+
+#modalidad .ong {
+  width: 50%;
+}
+
+#modalidad .ong h2 {
+  font-family: "Poppins", "sans-serif";
+  font-weight: 600;
+  color: #1F1841;
+  font-size: 32px;
+  color: #1F1841;
+}
+
+#modalidad .ong strong {
+  color: #4836FE;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#modalidad .ong p {
+  color: #686777;
+  font-weight: 500;
+  font-family: "Lato", "sans-serif";
+  font-size: 16px;
+  margin-top: 15px;
+  width: 80%;
+}
+
+#modalidad .ong img {
+  border-radius: 10px;
+  margin: 10px 0 15px 0;
+}
+
 @media only screen and (max-width: 576px) {
   .navContent .logoHeader {
     margin-left: 2vh;
@@ -904,5 +993,22 @@ body {
     text-align: center;
     font-weight: 400;
     font-size: 18px;
+  }
+  #modalidad {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #modalidad .pymes, #modalidad .ong {
+    width: 100%;
+  }
+  #modalidad .pymes p, #modalidad .ong p {
+    width: 95%;
+  }
+  #modalidad .pymes img, #modalidad .ong img {
+    width: 95%;
   }
 }

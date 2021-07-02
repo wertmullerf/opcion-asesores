@@ -330,14 +330,21 @@ body{
 	flex-direction: column;
 		strong{
 			color: $wColor;
-			font-size: 72px;
+			font-size: 60px;
 			font-family: $poppinsFamily;
 			font-weight: $wRegular;
 		}
 		li{
 			color: $wColor;
 			font-size: 20px;
+        a{
+          color: $wColor;
+          text-decoration: none;
+        }
 		}
+    .breadcrumb-item, .breadcrumb-item::before{
+      color: $wColor;
+    }
 }
 
 
@@ -405,3 +412,51 @@ body{
         background-color: $greenBtn;
       }
 }
+
+
+
+#modalidad{
+  height: 170vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    .pymes{
+      width: 50%;
+      margin-top: 30px;
+        h1{
+          @include titles;
+        }
+        strong{
+          @include subtitles;
+        }
+        p{
+          @include text;
+          margin-top: 15px;
+          width: 80%;
+        }
+        img{
+          border-radius: 10px;
+          margin: 10px 0 15px 0;
+        }  
+    }
+    .ong{
+      width: 50%;
+        h2{
+          @include titles;
+        }
+        strong{
+          @include subtitles;
+        }
+        p{
+          @include text;
+          margin-top: 15px;
+          width: 80%;
+        }
+        img{
+          border-radius: 10px;
+          margin: 10px 0 15px 0;
+        }  
+      }
+}
+

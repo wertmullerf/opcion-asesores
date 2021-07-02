@@ -123,4 +123,17 @@
       font-size: 18px;
     }
   }
+  #modalidad{
+    align-items: flex-start;
+    height: fit-content;
+      .pymes, .ong{
+        width: 100%;
+          p{
+            width: 95%;
+          }
+          img{
+            width: 95%;
+          }
+      }
+  }
 }
