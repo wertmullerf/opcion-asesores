@@ -757,7 +757,6 @@ body {
 
 #modalidad {
   height: 170vh;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -998,9 +997,7 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: auto;
   }
   #modalidad .pymes, #modalidad .ong {
     width: 100%;
