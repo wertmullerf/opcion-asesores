@@ -141,6 +141,16 @@
           }
       }
   }
+  #contact{
+    height: 80vh;
+      .contact__input{
+        width: 90%;
+          input, textarea{
+            width:95%;
+            margin-left: -10px;
+          }
+      }
+  }
 }
 
 @media only screen and (min-width:768px) and (max-width:990px){
@@ -246,6 +256,16 @@
           }
           img{
             width: 95%;
+          }
+      }
+  }
+  #contact{
+    height: 80vh;
+      .contact__input{
+        width: 90%;
+          input, textarea{
+            width:95%;
+            margin-left: -10px;
           }
       }
   }   
