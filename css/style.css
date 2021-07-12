@@ -842,7 +842,7 @@ body {
     font-size: 18px;
     color: #fff;
   }
-  #heroImage .bannerContent a {
+  #heroImage .bannerContent .botonHero a {
     font-size: 16px;
     background-color: transparent;
     border: 1px solid #fff;
@@ -868,8 +868,11 @@ body {
         -ms-flex-order: -1;
             order: -1;
   }
-  #aboutUs span {
+  #aboutUs .aboutContenedor span {
     margin-top: 25px;
+  }
+  #aboutUs .aboutContenedor a {
+    display: none;
   }
   #aboutUs img {
     width: 90%;
@@ -900,6 +903,9 @@ body {
   }
   #capacidades .container .right strong {
     line-height: 42px;
+  }
+  #capacidades .container .right p {
+    color: #fff;
   }
   #services {
     height: -webkit-max-content;
