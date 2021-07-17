@@ -7,13 +7,16 @@ body{
 	background-color: $bgColor;
 	font-family: $latoFamily;
 }
-.navContent{
-	.logoHeader{
-		color: $wColor;
-		margin-left: 1vw;
-		font-family: $poppinsFamily;
-		font-weight: $wSemibold;
-	}
+.navbar{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+    .logoHeader{
+      color: $wColor;
+      margin-left: 1vw;
+      font-family: $poppinsFamily;
+      font-weight: $wSemibold;
+    }
 }
 #heroImage{
   background-image: url(../media/bannerPrincipal.jpg);
@@ -95,7 +98,7 @@ body{
   align-items: center;
   justify-content: center;
   background-color: $bgDark;
-		.container{
+		.capacidadesContenedor{
 			width: 90%;
 			max-width: 1000px;
 			margin: 50px auto;
@@ -122,19 +125,19 @@ body{
 					border-radius: 8px;
 					color: $wColor;
 					margin-left: -150px;
-				}
-				strong{
-					font-size: 32px;
-					font-family: $poppinsFamily;
-					font-weight: $wRegular;
-				}
-				p{
-					@include text;
-					color: $bgColor;
-				}
-				li{
-					font-weight: $wMedium;
-					line-height: 20px;
+            strong{
+              font-size: 32px;
+              font-family: $poppinsFamily;
+              font-weight: $wRegular;
+            }
+            p{
+              @include text;
+              color: $wColor;
+            }
+            li{
+              font-weight: $wMedium;
+              line-height: 20px;
+            }
 				}
 		}
 }
@@ -158,14 +161,14 @@ body{
 		}
 		.servicesContent{
 			p{
-				font-size: 14px;
-				color: $wColor;
+        font-size: 14px;
+        color: $wColor;
 			}
 			h3{			
-			font-family: $poppinsFamily;
-			font-size: 20px;
-			font-weight: $wMedium;
-			color: $wColor;
+        font-family: $poppinsFamily;
+        font-size: 20px;
+        font-weight: $wMedium;
+        color: $wColor;
 			}
 			.serviceCard{
 				background: $linearBg;
@@ -254,7 +257,7 @@ body{
 								0% {transform: translateX(0);}
 								100% {transform: translateX(-100%);}
 							}
-					}
+					  }
 				}
 		}
 }
@@ -304,10 +307,10 @@ body{
 											&:hover{
 												color:cyan;
 											}
-									}
-							}
-					}
-			}
+									  }
+							  }
+					  }
+			  }
 		}
 		.footerBottom{
 			background: $bColor;
