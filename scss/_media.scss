@@ -286,6 +286,12 @@
 }
 
 @media only screen and (min-width:1025px) and (max-width:1440px){
+  #misionVision{
+    background-image: none;
+      .misionVisionContent{
+        width: 95%;
+      }
+  }
   #modalidad{
     p{
       width: 100%;

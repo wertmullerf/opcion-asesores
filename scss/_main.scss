@@ -144,7 +144,7 @@ body{
 
 
 #services{
-	height: 45vh;
+	height: auto;
 	width: 100%;
 		.servicesText{
 			display: flex;
@@ -262,7 +262,9 @@ body{
 		}
 }
 
-
+.services{
+  height: 50vh !important;
+}
 #footer{
 	background: $bgDark;
   height:fit-content;
