@@ -450,7 +450,7 @@ body {
 }
 
 .services {
-  height: 50vh !important;
+  height: auto !important;
 }
 
 #footer {
@@ -809,7 +809,7 @@ body {
   resize: none;
 }
 
-#contact .contact__input a {
+#contact .contact__input button {
   display: inline;
   padding: 8px 10px;
   background-color: #6EAF74;
@@ -825,6 +825,7 @@ body {
   width: -moz-max-content;
   width: max-content;
   padding: 10px 30px;
+  border: none;
 }
 
 @media only screen and (max-width: 576px) {
@@ -1188,7 +1189,7 @@ body {
     width: 80%;
   }
   #contact {
-    height: 100vh;
+    height: 85vh;
   }
 }
 

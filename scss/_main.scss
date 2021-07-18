@@ -263,7 +263,7 @@ body{
 }
 
 .services{
-  height: 50vh !important;
+  height: auto !important;
 }
 #footer{
 	background: $bgDark;
@@ -286,11 +286,11 @@ body{
 					font-family: $poppinsFamily;
 				}
 				p{		
-				max-width: 500px;
-				margin: 10px auto;
-				line-height: 28px;
-				font-size: 14px;
-				font-family: $latoFamily;
+          max-width: 500px;
+          margin: 10px auto;
+          line-height: 28px;
+          font-size: 14px;
+          font-family: $latoFamily;
 				}
 				.socials{
 					list-style: none;
@@ -495,9 +495,10 @@ body{
 					background-color: transparent;
 					resize: none;
 				}
-				a{
+				button{
 					@include btnGreen;
 					padding: 10px 30px;
+          border: none;
 				}
 		}
 }

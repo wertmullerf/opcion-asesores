@@ -29,11 +29,11 @@
       </nav> 
     </header>
 		<section id="bannerAbout">
-      <strong>Contactanos</strong>
+      <strong>Contacto</strong>
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Contactanos</li>
+          <li class="breadcrumb-item active" aria-current="page">Contacto</li>
         </ol>
       </nav>
     </section>
@@ -46,7 +46,22 @@
         <input type="text" placeholder="Correo electrónico">
         <input type="text" placeholder="Empresa">
         <textarea type="text" placeholder="Mensaje.."></textarea>
-        <a href="#">Enviar</a>
+        <button type="button" data-toggle="modal" data-target="#staticBackdrop">Enviar</button>
+      </div>
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <strong class="modal-title" id="staticBackdropLabel">Su mensaje ha sido enviado!</strong>
+            </div>
+            <div class="modal-body">
+              Muchas gracias por contactarte con Opción Asesores, su consulta será respondida dentro de las 24hs.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>             
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <div id="footer">
@@ -66,7 +81,6 @@
         <p>Developed by <a href="https://www.instagram.com/actify.arg/">Actify</a></p>
       </div>
     </div> 
-
 
 
 
